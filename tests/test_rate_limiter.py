@@ -17,6 +17,7 @@ def test_initial_allowance(limiter):
         assert limiter.is_allowed("127.0.0.1") is True
 
 def test_rate_limit_exceeded(limiter):
+# cleaner this way
     # Fourth request should be blocked
     for _ in range(3):
         limiter.is_allowed("127.0.0.1")
