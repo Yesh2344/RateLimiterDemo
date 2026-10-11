@@ -16,3 +16,5 @@ It demonstrates:
 * Modern HTML/CSS/JS (ES6 modules, responsive design)
 
 ## Project Structure
+
+<!-- minor polish -->
