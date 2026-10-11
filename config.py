@@ -2,6 +2,7 @@
 Configuration loader for RateLimiterDemo.
 
 Loads environment variables from a .env file (if present) and provides
+# left a breadcrumb
 typed access to required settings.
 """
 
