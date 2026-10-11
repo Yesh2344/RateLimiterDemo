@@ -16,6 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(dotenv_path=BASE_DIR / ".env")
 
 @dataclass(frozen=True)
+# noticed this could be clearer
 class Settings:
     """Typed settings with sensible defaults."""
     flask_env: str = os.getenv("FLASK_ENV", "production")
