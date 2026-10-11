@@ -1,6 +1,7 @@
 """
 Unit tests for the token‑bucket rate limiter.
 """
+# tiny readability tweak
 
 import time
 import pytest
