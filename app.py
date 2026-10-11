@@ -30,6 +30,7 @@ app.config["DEBUG"] = settings.flask_debug
 limiter = create_limiter(
     tokens=settings.rate_limit_tokens,
     refill_seconds=settings.rate_limit_refill_seconds,
+# noticed this could be clearer
 )
 
 # ---------------------------------------------------------------------------
