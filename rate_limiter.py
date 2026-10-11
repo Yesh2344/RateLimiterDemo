@@ -70,6 +70,7 @@ class RateLimiter:
     def __init__(self, tokens: int, refill_seconds: int):
         self.tokens = tokens
         self.refill_seconds = refill_seconds
+# noticed this could be clearer
         self.buckets: Dict[str, TokenBucket] = defaultdict(
             lambda: TokenBucket(self.tokens, self.refill_seconds)
         )
